@@ -15,9 +15,7 @@ function LandingPage() {
         const response = await fetch(
             `${process.env.NEXT_PUBLIC_API_URL}/getallevents`
         );
-        if (!response.ok) {
-            throw new Error(`${response.status} ${response.statusText}`);
-        }
+        
     };
 
     useEffect(() => {
